@@ -6,7 +6,7 @@
   <link href="https://aimyorcc.github.io/atom.xml" rel="self"/>
   
   <link href="https://aimyorcc.github.io/"/>
-  <updated>2020-06-08T07:35:08.070Z</updated>
+  <updated>2020-09-07T07:20:46.995Z</updated>
   <id>https://aimyorcc.github.io/</id>
   
   <author>
@@ -17,15 +17,17 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>post</title>
-    <link href="https://aimyorcc.github.io/2020-06-08-post.html"/>
-    <id>https://aimyorcc.github.io/2020-06-08-post.html</id>
-    <published>2020-06-08T07:35:08.000Z</published>
-    <updated>2020-06-08T07:35:08.070Z</updated>
+    <title>github + VScode 建立blog</title>
+    <link href="https://aimyorcc.github.io/2020-09-07-post.html"/>
+    <id>https://aimyorcc.github.io/2020-09-07-post.html</id>
+    <published>2020-09-07T07:35:08.000Z</published>
+    <updated>2020-09-07T07:20:46.995Z</updated>
     
     
     
     
+    
+    <category term="Quick Start blog" scheme="https://aimyorcc.github.io/tags/Quick-Start-blog/"/>
     
   </entry>
   
