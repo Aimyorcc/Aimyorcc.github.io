@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en, zh-CN">
+<html lang="en,zh-CN,default">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -22,14 +22,15 @@
     var CONFIG = {"hostname":"aimyorcc.github.io","root":"/","scheme":"Pisces","version":"8.0.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
   </script>
 
-  <meta name="description" content="What doesn&#39;t kill you makes you stronger.">
+  <meta name="description" content="Mac自带的词典中词库虽然够用，但是希望其能够在词语解释方面更加详尽，于是尝试自己为其添加词库（其实就是突然想好好学英语然后又看到了为Mac词典添加词库的内容）。 环境配置 python （系统自带）  Additional Tools for Xcode （将其中的“Dictionary Development Kit“复制到“~&#x2F;Developer&#x2F;Extras&#x2F;”路径下，若没有该路径则新建。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="github + VScode 建立blog">
+<meta property="og:title" content="为Mac原生词典添加词库">
 <meta property="og:url" content="https://aimyorcc.github.io/2020-09-07-post.html">
 <meta property="og:site_name">
-<meta property="og:description" content="What doesn&#39;t kill you makes you stronger.">
+<meta property="og:description" content="Mac自带的词典中词库虽然够用，但是希望其能够在词语解释方面更加详尽，于是尝试自己为其添加词库（其实就是突然想好好学英语然后又看到了为Mac词典添加词库的内容）。 环境配置 python （系统自带）  Additional Tools for Xcode （将其中的“Dictionary Development Kit“复制到“~&#x2F;Developer&#x2F;Extras&#x2F;”路径下，若没有该路径则新建。">
+<meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-09-07T07:35:08.000Z">
-<meta property="article:modified_time" content="2020-09-07T07:20:46.995Z">
+<meta property="article:modified_time" content="2020-09-09T15:49:01.241Z">
 <meta property="article:author" content="Aimyorcc">
 <meta property="article:tag" content="Quick Start blog">
 <meta name="twitter:card" content="summary">
@@ -44,11 +45,11 @@
     sidebar: "",
     isHome : false,
     isPost : true,
-    lang   : 'en, zh-CN'
+    lang   : 'en'
   };
 </script>
 
-  <title>github + VScode 建立blog | </title>
+  <title>为Mac原生词典添加词库 | </title>
   
 
 
@@ -164,7 +165,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -176,6 +177,7 @@
 
       <!--noindex-->
       <section class="post-toc-wrap sidebar-panel">
+          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#环境配置"><span class="nav-number">1.</span> <span class="nav-text">环境配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#转换步骤"><span class="nav-number">2.</span> <span class="nav-text">转换步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">3.</span> <span class="nav-text">总结</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本文参考"><span class="nav-number">4.</span> <span class="nav-text">本文参考</span></a></li></ol></div>
       </section>
       <!--/noindex-->
 
@@ -236,7 +238,7 @@
     
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en, zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://aimyorcc.github.io/2020-09-07-post.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -253,7 +255,7 @@
     
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          github + VScode 建立blog
+          为Mac原生词典添加词库
         </h1>
 
         <div class="post-meta-container">
@@ -263,10 +265,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2020-09-07 16:35:08 / Modified: 16:20:46" itemprop="dateCreated datePublished" datetime="2020-09-07T16:35:08+09:00">2020-09-07</time>
+      <time title="Created: 2020-09-07 16:35:08" itemprop="dateCreated datePublished" datetime="2020-09-07T16:35:08+09:00">2020-09-07</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2020-09-10 00:49:01" itemprop="dateModified" datetime="2020-09-10T00:49:01+09:00">2020-09-10</time>
+      </span>
 
   
 </div>
@@ -278,7 +286,46 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        
+        <p>Mac自带的词典中词库虽然够用，但是希望其能够在词语解释方面更加详尽，于是尝试自己为其添加词库（其实就是突然想好好学英语然后又看到了为Mac词典添加词库的内容）。</p>
+<h3 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h3><ol>
+<li><p>python （系统自带）</p>
+</li>
+<li><p><a href="https://developer.apple.com/download/more/" target="_blank" rel="noopener">Additional Tools for Xcode</a> （将其中的“Dictionary Development Kit“复制到“~/Developer/Extras/”路径下，若没有该路径则新建。）</p>
+</li>
+<li><p><a href="https://developer.apple.com/download/more/" target="_blank" rel="noopener">Command Line Tools for Xcode</a></p>
+</li>
+<li><p><a href="https://github.com/ilius/pyglossary" target="_blank" rel="noopener">pyglossary</a> （将词典转换为Mac词典格式的工具）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/ilius/pyglossary.git</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>BeautifulSoup4 （pyglossary需要的python包）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ pip3 install lxml beautifulsoup4 html5lib</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h3 id="转换步骤"><a href="#转换步骤" class="headerlink" title="转换步骤"></a>转换步骤</h3><ol>
+<li><p>下载好需要转换的词库，如Longman，Oxford，Collins，Merriam-Webster等（.mdd或.mdx格式），并将其存放在任意目录下，如“<del>/Downloads/dict/”。<br>此文中以“</del>/Downloads/dict/Oxford_dict.mdx”为例。</p>
+</li>
+<li><p>进入词库所在文件夹，并输入转换命令。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~/Downloads/dict/</span><br><span class="line">$ ~/Downloads/pyglossary/main.py --write-format=AppleDict Oxford_dict.mdx Oxford_dict</span><br></pre></td></tr></table></figure>
+<p>其中“~/Downloads/pyglossary”是pyglossary的存放地址。<br>第二句指令是指，使用pyglossary工具将Oxford_dict.mdx转换为苹果系统中词典的格式，并命名为Oxford_dict。</p>
+</li>
+<li><p>转换完成后，当前目录“~/Downloads/dict”下新生成了一个名为“Oxford_dict”的文件夹。进入该文件夹并编译生成“*.dictionary”文件。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> Oxford_dict</span><br><span class="line">$ make</span><br></pre></td></tr></table></figure>
+<p>完成后，“Oxford_dict”文件夹中新生成了“Oxford_dict.dictionary”文件。</p>
+</li>
+<li><p>使用“cp”指令复制“Oxford_dict.dictionary”文件到“<del>/Library/Dictionaries”，或者直接在终端输入如下命令使新的词典安装到“</del>/Library/Dictionaries”。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ make install</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>打开词典App，在“Preferences”可以找到新添加的词库。</p>
+</li>
+</ol>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>以上方法转换的词典不能发音。</p>
+<p>支持图片和发音的词库的转换方法请参考：</p>
+<p><a href="https://kaihao.io/2018/mdict-to-macos-dictionary/?utm_source=pdawiki&utm_medium=social&utm_campaign=Macmillan2%20LDOCE5%20OLCC" target="_blank" rel="noopener">【Mdict to macOS Dictionary转换笔记】</a>。</p>
+<p>当然更简单的方法是使用已经转换好的词库，请参考：</p>
+<p><a href="https://www.pdawiki.com/forum/forum.php?mod=viewthread&tid=21623" target="_blank" rel="noopener">【Mac词典中的Macmillan2、LDOCE5、牛津朗文剑桥柯林斯四合一双解】</a>。</p>
+<h3 id="本文参考"><a href="#本文参考" class="headerlink" title="本文参考"></a>本文参考</h3><p>知乎：<a href="https://www.zhihu.com/question/20428599" target="_blank" rel="noopener">【可以给Mac的Dictionary添加其他原装词典吗？怎么添加？】</a></p>
+
     </div>
 
     
@@ -339,6 +386,24 @@
   <footer class="footer">
     <div class="footer-inner">
       
+  <div class="languages">
+    <label class="lang-select-label">
+      <i class="fa fa-language"></i>
+      <span>English</span>
+      <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </label>
+    <select class="lang-select" data-canonical="">
+      
+        <option value="en" data-href="/2020-09-07-post.html" selected="">
+          English
+        </option>
+      
+        <option value="zh-CN" data-href="/zh-CN/2020-09-07-post.html" selected="">
+          简体中文
+        </option>
+      
+    </select>
+  </div>
 
       
 
