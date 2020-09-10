@@ -269,7 +269,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2020-09-10 15:34:04" itemprop="dateModified" datetime="2020-09-10T15:34:04+09:00">2020-09-10</time>
+        <time title="Modified: 2020-09-10 16:41:23" itemprop="dateModified" datetime="2020-09-10T16:41:23+09:00">2020-09-10</time>
       </span>
 
   
@@ -282,8 +282,8 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>Mac自带的词典中词库虽然够用，但是希望其能够在词语解释方面更加详尽，于是尝试自己为其添加词库（其实就是突然想好好学英语然后又看到了为Mac词典添加词库的内容）。</p>
-<h3 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h3><ol>
+          <p>Mac自带的词典中词库虽然够用，但是希望其能够在词语解释方面更加详尽，于是尝试自己为其添加词库（其实就是突然想好好学英语然后又看到了为Mac词典添加词库的内容）。<br>方法一稍复杂，方法二稍简单。</p>
+<h2 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h2><h3 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h3><ol>
 <li><p>python （系统自带）</p>
 </li>
 <li><p><a href="https://developer.apple.com/download/more/" target="_blank" rel="noopener">Additional Tools for Xcode</a>（将其中的“Dictionary Development Kit”复制到“~/Developer/Extras/”路径下，若没有相应文件夹则新建。）</p>
@@ -319,7 +319,18 @@
 <p><a href="https://kaihao.io/2018/mdict-to-macos-dictionary/?utm_source=pdawiki&utm_medium=social&utm_campaign=Macmillan2%20LDOCE5%20OLCC" target="_blank" rel="noopener">【Mdict to macOS Dictionary转换笔记】</a>。</p>
 <p>当然更简单的方法是使用已经转换好的词库，请参考：</p>
 <p><a href="https://www.pdawiki.com/forum/forum.php?mod=viewthread&tid=21623" target="_blank" rel="noopener">【Mac词典中的Macmillan2、LDOCE5、牛津朗文剑桥柯林斯四合一双解】</a>。</p>
-<h3 id="本文参考"><a href="#本文参考" class="headerlink" title="本文参考"></a>本文参考</h3><p>知乎：<a href="https://www.zhihu.com/question/20428599" target="_blank" rel="noopener">【可以给Mac的Dictionary添加其他原装词典吗？怎么添加？】</a></p>
+<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p>知乎：<a href="https://www.zhihu.com/question/20428599" target="_blank" rel="noopener">【可以给Mac的Dictionary添加其他原装词典吗？怎么添加？】</a></p>
+<h2 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h2><h3 id="软件下载"><a href="#软件下载" class="headerlink" title="软件下载"></a>软件下载</h3><ol>
+<li><a href="https://github.com/jjgod/mac-dictionary-kit/files/4176459/DictUnifier.zip" target="_blank" rel="noopener">DictUnifier.app</a> （Catalina 版本）</li>
+<li>安装glib<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew install glib</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h3 id="转换步骤-1"><a href="#转换步骤-1" class="headerlink" title="转换步骤"></a>转换步骤</h3><ol>
+<li>将所需的词典下载好，格式为*.tar.bz2。 词典包下载参考网址：<a href="http://download.huzheng.org/zh_CN/index.html" target="_blank" rel="noopener">【词典包】</a></li>
+<li>将下载好的词典包拖到DictUnifier.app中，等待转换完成。</li>
+<li>转换成功后，打开词典，进入“Preferences”中可以看到新添加的词典包。勾选后即可在词典中使用。</li>
+</ol>
 
       
     </div>
