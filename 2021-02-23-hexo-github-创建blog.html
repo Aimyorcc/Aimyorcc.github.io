@@ -22,31 +22,33 @@
     var CONFIG = {"hostname":"aimyorcc.github.io","root":"/","scheme":"Pisces","version":"8.0.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
   </script>
 
-  <meta name="description" content="What doesn&#39;t kill you makes you stronger.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="知否知否">
-<meta property="og:url" content="https://aimyorcc.github.io/index.html">
+  <meta name="description" content="一年前就创建了博客，一直没有记录内容。眨眼间一年多就过去了，翻看博客发现什么内容都没有，仿佛虚度了一年…其实很早前就想把创建博客的过程写下来，但是拖延症重度患者一直拖拖拖…就到了现在。记录一下吧，也避免之后再想写博客又忘记了怎么创建、怎么上传、怎么更新…（本来脑子就不好使，还总是想不起记录下来，我大概是没治了） 创建博客环境配置 安装Node.js：  1brew install node   安">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MacOS hexo + github 创建blog">
+<meta property="og:url" content="https://aimyorcc.github.io/2021-02-23-hexo-github-%E5%88%9B%E5%BB%BAblog.html">
 <meta property="og:site_name" content="知否知否">
-<meta property="og:description" content="What doesn&#39;t kill you makes you stronger.">
+<meta property="og:description" content="一年前就创建了博客，一直没有记录内容。眨眼间一年多就过去了，翻看博客发现什么内容都没有，仿佛虚度了一年…其实很早前就想把创建博客的过程写下来，但是拖延症重度患者一直拖拖拖…就到了现在。记录一下吧，也避免之后再想写博客又忘记了怎么创建、怎么上传、怎么更新…（本来脑子就不好使，还总是想不起记录下来，我大概是没治了） 创建博客环境配置 安装Node.js：  1brew install node   安">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-02-23T03:33:23.000Z">
+<meta property="article:modified_time" content="2021-02-23T14:38:25.226Z">
 <meta property="article:author" content="Aimyorcc">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://aimyorcc.github.io/">
+<link rel="canonical" href="https://aimyorcc.github.io/2021-02-23-hexo-github-%E5%88%9B%E5%BB%BAblog.html">
 
 
 <script class="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>知否知否</title>
+  <title>MacOS hexo + github 创建blog | 知否知否</title>
   
 
 
@@ -162,7 +164,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -174,6 +176,7 @@
 
       <!--noindex-->
       <section class="post-toc-wrap sidebar-panel">
+          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建博客"><span class="nav-number">1.</span> <span class="nav-text">创建博客</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#环境配置"><span class="nav-number">1.1.</span> <span class="nav-text">环境配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注册github账号、创建项目"><span class="nav-number">1.2.</span> <span class="nav-text">注册github账号、创建项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Hexo"><span class="nav-number">1.3.</span> <span class="nav-text">安装Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#将博客部署至github"><span class="nav-number">1.4.</span> <span class="nav-text">将博客部署至github</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#写文章、发布文章"><span class="nav-number">1.5.</span> <span class="nav-text">写文章、发布文章</span></a></li></ol></li></ol></div>
       </section>
       <!--/noindex-->
 
@@ -226,11 +229,12 @@
 </noscript>
 
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
       
 
       
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
@@ -249,10 +253,9 @@
     
     
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021-02-23-hexo-github-%E5%88%9B%E5%BB%BAblog.html" class="post-title-link" itemprop="url">MacOS hexo + github 创建blog</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          MacOS hexo + github 创建blog
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -276,7 +279,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>一年前就创建了博客，一直没有记录内容。眨眼间一年多就过去了，翻看博客发现什么内容都没有，仿佛虚度了一年…其实很早前就想把创建博客的过程写下来，但是拖延症重度患者一直拖拖拖…就到了现在。记录一下吧，也避免之后再想写博客又忘记了怎么创建、怎么上传、怎么更新…（本来脑子就不好使，还总是想不起记录下来，我大概是没治了）</p>
+        <p>一年前就创建了博客，一直没有记录内容。眨眼间一年多就过去了，翻看博客发现什么内容都没有，仿佛虚度了一年…其实很早前就想把创建博客的过程写下来，但是拖延症重度患者一直拖拖拖…就到了现在。记录一下吧，也避免之后再想写博客又忘记了怎么创建、怎么上传、怎么更新…（本来脑子就不好使，还总是想不起记录下来，我大概是没治了）</p>
 <h2 id="创建博客"><a href="#创建博客" class="headerlink" title="创建博客"></a>创建博客</h2><h3 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h3><ol>
 <li>安装Node.js：</li>
 </ol>
@@ -357,7 +360,6 @@
 </li>
 </ol>
 
-      
     </div>
 
     
@@ -365,208 +367,22 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2020-09-07-post.html" rel="prev" title="为Mac原生词典添加词库">
+                  <i class="fa fa-chevron-left"></i> 为Mac原生词典添加词库
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
     </footer>
   </article>
   
   
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://aimyorcc.github.io/2020-09-07-post.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/image.jpeg">
-      <meta itemprop="name" content="Aimyorcc">
-      <meta itemprop="description" content="What doesn't kill you makes you stronger.">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="知否知否">
-    </span>
-
-    
-    
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020-09-07-post.html" class="post-title-link" itemprop="url">为Mac原生词典添加词库</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2020-09-07 16:35:08" itemprop="dateCreated datePublished" datetime="2020-09-07T16:35:08+09:00">2020-09-07</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2020-09-10 16:41:23" itemprop="dateModified" datetime="2020-09-10T16:41:23+09:00">2020-09-10</time>
-      </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>Mac自带的词典中词库虽然够用，但是希望其能够在词语解释方面更加详尽，于是尝试自己为其添加词库（其实就是突然想好好学英语然后又看到了为Mac词典添加词库的内容）。<br>方法一稍复杂，方法二稍简单。</p>
-<h2 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h2><h3 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h3><ol>
-<li><p>python （系统自带）</p>
-</li>
-<li><p><a href="https://developer.apple.com/download/more/" target="_blank" rel="noopener">Additional Tools for Xcode</a>（将其中的“Dictionary Development Kit”复制到“~/Developer/Extras/”路径下，若没有相应文件夹则新建。）</p>
-</li>
-<li><p><a href="https://developer.apple.com/download/more/" target="_blank" rel="noopener">Command Line Tools for Xcode</a></p>
-</li>
-<li><p><a href="https://github.com/ilius/pyglossary" target="_blank" rel="noopener">pyglossary</a>（将词典转换为Mac词典格式的工具）</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/ilius/pyglossary.git</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>BeautifulSoup4 （pyglossary需要的python包）</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ pip3 install lxml beautifulsoup4 html5lib</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<h3 id="转换步骤"><a href="#转换步骤" class="headerlink" title="转换步骤"></a>转换步骤</h3><ol>
-<li><p>下载好需要转换的词库，如Longman，Oxford，Collins，Merriam-Webster等（.mdd或.mdx格式），并将其存放在任意目录下。此文中以“~/Downloads/dict/Oxford_dict.mdx”为例。</p>
-</li>
-<li><p>进入词库所在文件夹，并输入转换命令。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~/Downloads/dict/</span><br><span class="line">$ ~/Downloads/pyglossary/main.py --write-format=AppleDict Oxford_dict.mdx Oxford_dict</span><br></pre></td></tr></table></figure>
-<p>其中“~/Downloads/pyglossary”是pyglossary的存放地址。<br>第二句指令是指，使用pyglossary工具将Oxford_dict.mdx转换为苹果系统中词典的格式，并命名为Oxford_dict。</p>
-</li>
-<li><p>转换完成后，当前目录“~/Downloads/dict”下新生成了一个名为“Oxford_dict”的文件夹。进入该文件夹并编译生成“*.dictionary”文件。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> Oxford_dict</span><br><span class="line">$ make</span><br></pre></td></tr></table></figure>
-<p>完成后，“Oxford_dict”文件夹中新生成了“Oxford_dict.dictionary”文件。</p>
-</li>
-<li><p>使用“cp”指令复制“Oxford_dict.dictionary”文件到“~/Library/Dictionaries”，或者直接在终端输入如下命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ make install</span><br></pre></td></tr></table></figure></li>
-<li><p>打开词典App，在“Preferences”可以找到新添加的词库。</p>
-</li>
-</ol>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>以上方法转换的词典不能发音。</p>
-<p>支持图片和发音的词库的转换方法请参考：</p>
-<p><a href="https://kaihao.io/2018/mdict-to-macos-dictionary/?utm_source=pdawiki&utm_medium=social&utm_campaign=Macmillan2%20LDOCE5%20OLCC" target="_blank" rel="noopener">【Mdict to macOS Dictionary转换笔记】</a>。</p>
-<p>当然更简单的方法是使用已经转换好的词库，请参考：</p>
-<p><a href="https://www.pdawiki.com/forum/forum.php?mod=viewthread&tid=21623" target="_blank" rel="noopener">【Mac词典中的Macmillan2、LDOCE5、牛津朗文剑桥柯林斯四合一双解】</a>。</p>
-<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p>知乎：<a href="https://www.zhihu.com/question/20428599" target="_blank" rel="noopener">【可以给Mac的Dictionary添加其他原装词典吗？怎么添加？】</a></p>
-<h2 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h2><h3 id="软件下载"><a href="#软件下载" class="headerlink" title="软件下载"></a>软件下载</h3><ol>
-<li><a href="https://github.com/jjgod/mac-dictionary-kit/files/4176459/DictUnifier.zip" target="_blank" rel="noopener">DictUnifier.app</a> （Catalina 版本）</li>
-<li>安装glib<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew install glib</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<h3 id="转换步骤-1"><a href="#转换步骤-1" class="headerlink" title="转换步骤"></a>转换步骤</h3><ol>
-<li>将所需的词典下载好，格式为*.tar.bz2。 词典包下载参考网址：<a href="http://download.huzheng.org/zh_CN/index.html" target="_blank" rel="noopener">【词典包】</a></li>
-<li>将下载好的词典包拖到DictUnifier.app中，等待转换完成。</li>
-<li>转换成功后，打开词典，进入“Preferences”中可以看到新添加的词典包。勾选后即可在词典中使用。</li>
-</ol>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://aimyorcc.github.io/2019-12-20-hello-world.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/image.jpeg">
-      <meta itemprop="name" content="Aimyorcc">
-      <meta itemprop="description" content="What doesn't kill you makes you stronger.">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="知否知否">
-    </span>
-
-    
-    
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2019-12-20-hello-world.html" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2019-12-20 17:56:10" itemprop="dateCreated datePublished" datetime="2019-12-20T17:56:10+09:00">2019-12-20</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-  
-  
-  
-
-
   
 
 
