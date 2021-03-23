@@ -6,7 +6,7 @@
   <link href="https://aimyorcc.github.io/atom.xml" rel="self"/>
   
   <link href="https://aimyorcc.github.io/"/>
-  <updated>2021-02-23T16:07:54.769Z</updated>
+  <updated>2021-03-23T05:53:54.413Z</updated>
   <id>https://aimyorcc.github.io/</id>
   
   <author>
@@ -15,6 +15,58 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>嵌入式学习笔记</title>
+    <link href="https://aimyorcc.github.io/2021-03-15-%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%AD%A6%E4%B9%A0.html"/>
+    <id>https://aimyorcc.github.io/2021-03-15-%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%AD%A6%E4%B9%A0.html</id>
+    <published>2021-03-15T14:23:25.000Z</published>
+    <updated>2021-03-23T05:53:54.413Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="GCC相关指令"><a href="#GCC相关指令" class="headerlink" title="GCC相关指令"></a>GCC相关指令</h4><ul><li>gcc -o 输出文件名 输入文件名.c<ul><li>输入文件名可以在<code>-o</code>前或输入文件名后，但不可以直接跟在<code>-o</code>后。</li></ul></li><li>gcc -v -o 输出文件名 输入文件名<ul><li>查看gcc翻译官详细信息。</li></ul></li><li>C语言编译过程<ul><li>预处理：gcc -E -o<ul><li>等于<code>cpp -o 输出文件名.i 输入文件名.c</code></li><li><code>#define</code>和<code>#include</code>在预处理阶段被翻译。</li></ul></li><li>编译：gcc -S -o<ul><li>等于<code>/usr/lib/gcc/i486-linux-gnu/4.4.3/cc1 -o 输出文件名.s 输入文件名.i</code></li><li>编译的时候已经没有<code>#define</code>和<code>#include</code>，主要编译关键字和运算符。</li></ul></li><li>编译-&gt;汇编：gcc -c -o<ul><li>等于<code>/usr/lib/gcc/i486-linux-gnu/4.4.3/as -o 输出文件名.o 输入文件名.s</code></li></ul></li><li>编译-&gt;汇编-&gt;链接: gcc -o 输出文件名 输入文件名.c<ul><li>等于<code>/usr/lib/gcc/i486-linux-gnu/4.4.3/collect2 -o 输出文件名 输入文件名.o+....</code></li></ul></li></ul></li></ul><h4 id="C语言常见错误"><a href="#C语言常见错误" class="headerlink" title="C语言常见错误"></a>C语言常见错误</h4><ul><li>预处理错误：#include出错，找不到指定头文件。<ul><li><code>#include &quot;name&quot;</code>双引号一般指自定义的头文件，在当前目录下寻找“name”头文件。</li><li><code>#include &lt;name&gt;</code>尖括号一般指系统库的头文件，在系统的环境变量中寻找“name”头文件。</li><li>解决方法之一：<code>gcc -I./查找头文件的目录 -o 输出文件名 输入文件名.c</code></li></ul></li><li>编译错误<ul><li>语法错误</li></ul></li><li>链接错误<ul><li><code>undefined reference to &#39;fun&#39;</code>指原材料不够，即没有关于fun函数的足够的内容。解决：查看标签是否实现；链接时是否将相关文件加入一起链接。</li><li><code>multiple definition of &#39;fun&#39;</code>存在多个fun函数的定义。解决：只保留一个标签的实现。</li></ul></li></ul><h4 id="预处理的使用"><a href="#预处理的使用" class="headerlink" title="预处理的使用"></a>预处理的使用</h4><ul><li><p><code>#include</code>包含头文件</p></li><li><p><code>#define 宏名 宏体</code>宏体对宏名进行替换，但是不进行语法检查（注意）！</p><ul><li>宏体加括号更安全，例如：<code>#define ABC (5+3)</code></li><li>宏函数：```#define ABC(x) (5+(x))</li></ul></li><li><p>条件编译：<code>#ifdef</code>、<code>#else</code>、<code>#endif</code></p></li><li><p>预定义宏：系统已经定义好的。方便在调试中使用。</p><ul><li><code>__FUNCTION__</code>：函数名，<code>%s</code>。</li><li><code>__FILE__</code>：文件名，<code>%s</code>。</li><li><code>__LINE__</code>：行号，<code>%d</code>。</li></ul></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h4 id=&quot;GCC相关指令&quot;&gt;&lt;a href=&quot;#GCC相关指令&quot; class=&quot;headerlink&quot; title=&quot;GCC相关指令&quot;&gt;&lt;/a&gt;GCC相关指令&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;gcc -o 输出文件名 输入文件名.c&lt;ul&gt;
+&lt;li&gt;输入文件名可以在&lt;code&gt;-</summary>
+      
+    
+    
+    
+    <category term="Quick Start" scheme="https://aimyorcc.github.io/categories/Quick-Start/"/>
+    
+    
+    <category term="GCC、嵌入式" scheme="https://aimyorcc.github.io/tags/GCC%E3%80%81%E5%B5%8C%E5%85%A5%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>人工智能学习笔记</title>
+    <link href="https://aimyorcc.github.io/2021-03-09-%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html"/>
+    <id>https://aimyorcc.github.io/2021-03-09-%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html</id>
+    <published>2021-03-09T14:58:25.000Z</published>
+    <updated>2021-03-23T05:53:52.926Z</updated>
+    
+    <content type="html"><![CDATA[<p>努力学习一下人工智能相关的内容吧～～</p><h4 id="相关概念"><a href="#相关概念" class="headerlink" title="相关概念"></a>相关概念</h4><p>机器学习有三种训练方法：监督学习、非监督学习、强化学习。</p><ul><li>监督学习（Supervised Learning）：是一种目的明确的训练方式，你知道得到的是什么。它从有标记的训练数据中推导出预测函数。有标记的训练数据是指每个训练实例都包括输入和期望的输出。<ul><li>特点：目的明确，需要带标签的训练数据，易评估效果。</li></ul></li><li>无监督学习（Unsupervised Learning）：其是机器学习任务的一种。它从无标记的训练数据中推断结论。<ul><li>特点：目的不明确，不需要给数据打标签，无法量化效果。</li></ul></li><li>强化学习是机器学习的另一个领域。给定数据，学习如何选择一系列行动，以最大化长期收益。</li><li>泛化能力、泛化误差</li><li>欠拟合（underfitting）：模型不能在训练集上获得足够低的误差。即模型复杂度低，在训练集上就表现很差，不能学习到数据背后的规律。<ul><li>一般发生在训练刚开始时，经过不断训练后会变好。</li></ul></li><li>过拟合（overfitting）：训练误差和测试误差之间的差距太大。即模型复杂度高于实际问题，模型在训练集上表现很好，但在测试集上却表现很差。模型对训练集”死记硬背”（记住了不适用于测试集的训练集性质或特点），没有理解数据背后的规律，泛化能力差。</li><li>马尔科夫决策树</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;努力学习一下人工智能相关的内容吧～～&lt;/p&gt;
+&lt;h4 id=&quot;相关概念&quot;&gt;&lt;a href=&quot;#相关概念&quot; class=&quot;headerlink&quot; title=&quot;相关概念&quot;&gt;&lt;/a&gt;相关概念&lt;/h4&gt;&lt;p&gt;机器学习有三种训练方法：监督学习、非监督学习、强化学习。&lt;/p&gt;
+&lt;ul</summary>
+      
+    
+    
+    
+    <category term="Quick Start" scheme="https://aimyorcc.github.io/categories/Quick-Start/"/>
+    
+    
+    <category term="ML、DL、AI" scheme="https://aimyorcc.github.io/tags/ML%E3%80%81DL%E3%80%81AI/"/>
+    
+  </entry>
   
   <entry>
     <title>MacOS hexo + github 创建blog</title>
